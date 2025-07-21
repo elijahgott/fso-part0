@@ -3,10 +3,12 @@
 ## Exercise 4
 
 ```mermaid
-    participant browser
-    participant server
+    sequenceDiagram
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
-    activate server
-    server-->>browser: HTML document 
+        participant browser
+        participant server
+
+        browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+        activate server
+        server-->>browser: HTML document 
 ```
