@@ -59,3 +59,16 @@
         server-->>browser: JSON file [{"content": ..., "date": ...} ...]
         deactivate server
 ```
+
+## Exercise 6
+```mermaid
+    sequenceDiagram
+        participant browser
+        participant server
+
+        browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+        activate server
+        server-->>browser: 201 created ({content: ..., data: ...})
+        deactivate server
+        Note right of browser: Browser executes code to update notes list
+```
